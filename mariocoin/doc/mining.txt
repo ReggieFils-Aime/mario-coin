@@ -1,0 +1,22 @@
+MarioCoin mining
+================
+
+MarioCoin uses scrypt. Use a GPU, CPU mining is too slow.
+
+Solo:
+
+  ./mariocoind -gen -genproclimit=2
+  ./mariocoind getmininginfo
+
+Pool:
+
+  cgminer --scrypt -o stratum+tcp://pool.mariocoin.org:3333 -u user.1 -p x
+
+Settings that work ok:
+
+  intensity 13-20
+  thread-concurrency 8192
+  worksize 256
+  lookup-gap 2
+
+Mined coins need 60 confirmations before you can spend them.

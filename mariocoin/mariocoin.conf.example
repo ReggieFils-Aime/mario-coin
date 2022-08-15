@@ -1,0 +1,15 @@
+rpcuser=mariouser
+rpcpassword=changethis
+
+server=1
+daemon=1
+listen=1
+
+port=19484
+rpcport=19485
+
+addnode=node1.mariocoin.org
+addnode=node2.mariocoin.org
+
+#testnet=1
+paytxfee=0.001
